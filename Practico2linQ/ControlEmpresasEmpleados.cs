@@ -14,6 +14,8 @@ namespace Practico2linQ
         public List<Empresa> ListaEmpresas;
         public List<Empleado> ListaEmpleados;
 
+
+        //Ej 2
         public ControlEmpresasEmpleados()
         {
             ListaEmpresas = new List<Empresa>();

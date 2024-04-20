@@ -19,16 +19,15 @@ namespace Practico2linQ
             new Persona(40, "Jose", "Buenos Aires")
         };
 
-            //Ej 1
+            //Ej 1-1
 
             personas.OrderBy(p => p.Nombre).ToList()
-                          .Where(p => p.Edad > 30 && p.Ciudad == "Lima")
+                          .Where(p => p.Edad > 30 && p.Ciudad == "Bogota")
                           .ToList()
                           .ForEach(p => Console.WriteLine(p.Nombre));
             Console.ReadKey();
 
-            //Ej 2
-
+            //Ej 1-2
              personas.Where(p => p.Edad >= 25 && p.Edad <= 35)
                   .ToList()
                   .OrderBy(p => p.Nombre)
@@ -70,22 +69,19 @@ namespace Practico2linQ
             Console.ReadKey();
 
 
-            //EJ 4-id 
+            //EJ 4-1
 
             Console.WriteLine(valores.Sum());
             Console.ReadKey();
 
+            //EJ 4-2
+
             Console.WriteLine(valores.Where(v => v % 2 == 0).ToList().Sum());
             Console.ReadKey();
 
-
-            //EJ 4-2
-
-
-
             //EJ 5-1
 
-
+            //La complejidad algoritmica es de 7.
 
             //EJ 5-2
 
@@ -97,9 +93,12 @@ namespace Practico2linQ
             Console.WriteLine(sumaTotalValoresMayoresAOCHO);
             Console.WriteLine(sumaTotalValoresMenoresAOCHO);
 
+            //Ej 6-1
+
+            //La complejidad algoritmica es de 6.
+
 
             //Ej 6-2
-
 
             Console.WriteLine("Coloque una letra de la A a la F");
             string letra = Console.ReadLine();
