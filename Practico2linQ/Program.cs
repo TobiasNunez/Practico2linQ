@@ -64,13 +64,18 @@ namespace Practico2linQ
             }
             Console.ReadKey();
 
-            //EJ 3-1
+
+            // 3-1
+
+            //La complejidad algoritmica es de 4.
+
+
+            //EJ 3-2
             valores.OrderByDescending(x => x).ToList().ForEach(x => Console.WriteLine(x));
             Console.ReadKey();
 
 
             //EJ 4-1
-
             Console.WriteLine(valores.Sum());
             Console.ReadKey();
 
